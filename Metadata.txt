@@ -1,0 +1,25 @@
+The original six dataset filenames are:
+
+ECIDs.cts_75.Mapping.padded.main.cumulative.summary_table.tsv
+GOProcIDs.cts_75.Mapping.padded.main.cumulative.summary_table.tsv
+GOFuncIDs.cts_75.Mapping.padded.main.cumulative.summary_table.tsv
+PFamIDs.cts_75.Mapping.padded.main.cumulative.summary_table.tsv
+TIGRFamIDs.cts_75.Mapping.padded.main.cumulative.summary_table.tsv
+Phyllo_Genus.cts_75.combined.main.summary_table.xls
+
+The datasets are read into the R code and grouped together in a list in the exact order above. Each set is then further divided into three subsets based
+on city: CA, DE, and HF in that order. Thus, the final output for each dataset-city would look like the following:
+dataset-1.1.csv, dataset-1.2.csv, dataset-1.3.csv, dataset-2.1.csv, and so on. For instance, dataset-1.1.csv corresponds to the replications from the
+ECIDs dataset and the CA city subset. Dataset-1.2.csv represents ECIDs from DE, and dataset-1.3.csv represents ECIDs from HF. 
+
+To include the HF.group in the analysis, a new third "drought" replication was created via imputation. More specifically, the new replication,
+called "PHYLLO30", is the average of the other two drought replications.
+ 
+Interestingly, some datasets produced different results depending on whether the default analysis method, or an alternate (involving the regeneration of counts with
+a common dispersion). For the sake of thoroughness, files created from both methods have been included in the Outputs folder. The following reported no signficant differences, and
+thus were eliminated from the list of outputs:
+
+ECIDs, DE group (Set 1, subset 2, method 1)
+ECIDs, HF group (Set 1, subset 3, method 1)
+GOFuncIDs, CA group (Set 3, subset 1, both methods)
+GOFuncIDs, DE group (Set 3, subset 2, method 1)
