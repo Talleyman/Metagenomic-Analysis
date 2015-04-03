@@ -21,5 +21,10 @@ thus were eliminated from the list of outputs:
 
 ECIDs, DE group (Set 1, subset 2, method 1)
 ECIDs, HF group (Set 1, subset 3, method 1)
+GOProcIDs, CA group (Set 2, subset 1, method 1)
+GOProcIDs, DE group (Set 2, subset 2, method 1)
 GOFuncIDs, CA group (Set 3, subset 1, both methods)
 GOFuncIDs, DE group (Set 3, subset 2, method 1)
+TIGRFamIDs, DE group (Set 5, subset 2, method 1)
+TIGRFamIDs, HF group (Set 5, subset 3, method 1)
+Phyllo_Genus, HF group (Set 6, subset 3, method 1)
