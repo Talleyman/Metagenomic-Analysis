@@ -94,7 +94,7 @@ for (i in 1:length(uberlist)){
     #Some datasets have issues with normalization method, hence switch to method 2
     try(TwoStage_Package(uberlist[[i]][[j]],group,paste("sigtest","method2",filename,sep="-"),2))
     try(TwoStage_Package(uberlist[[i]][[j]],group,paste("sigtest",filename,sep="-"),1))
-    print(c(i, j)) #Print the "coordinate" of the dataset so we know which ones specifically produc1e errors or insignificant results
+    print(c(i, j)) #Print the "coordinate" of the dataset so we know which ones specifically produce errors or insignificant results
   }
 }
 
